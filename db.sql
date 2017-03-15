@@ -187,6 +187,20 @@ CREATE TABLE `o_order_goods` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单表';
 
 -- ----------------------------
+-- Table structure for o_package
+-- ----------------------------
+DROP TABLE IF EXISTS `o_package`;
+CREATE TABLE `o_package` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `express_no` bigint(20) unsigned NOT NULL COMMENT '快递单号',
+  `order_no` bigint(20) unsigned NOT NULL COMMENT '订单号',
+  `text_msg` char(30) NOT NULL COMMENT '快递单号',
+  `insert_time` int(10) unsigned NOT NULL COMMENT '添加时间',
+  `update_time` int(10) unsigned NOT NULL COMMENT '修改时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='快递包裹表';
+
+-- ----------------------------
 -- Table structure for p_weixin
 -- ----------------------------
 DROP TABLE IF EXISTS `p_weixin`;
