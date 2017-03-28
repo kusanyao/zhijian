@@ -20,12 +20,12 @@ SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 DROP TABLE IF EXISTS `b_article`;
 CREATE TABLE `b_article` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `cate_id` int(10) unsigned NOT NULL COMMENT 'category.id',
-  `title` char(50) NOT NULL COMMENT '标题',
-  `content` text NOT NULL COMMENT '内容',
-  `insert_time` int(10) unsigned NOT NULL COMMENT '添加时间',
-  `update_time` int(10) unsigned NOT NULL COMMENT '修改时间',
+  `a_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `a_cate_id` int(10) unsigned NOT NULL COMMENT 'category.id',
+  `a_title` char(50) NOT NULL COMMENT '标题',
+  `a_content` text NOT NULL COMMENT '内容',
+  `a_insert_time` int(10) unsigned NOT NULL COMMENT '添加时间',
+  `a_update_time` int(10) unsigned NOT NULL COMMENT '修改时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='文章表';
 
